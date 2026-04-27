@@ -99,7 +99,7 @@ module.exports = {
 					commandDetails += `│ 📚 Usage Guide:\n│ ${guideText.replace(/{pn}/g, `!${command.config.name}`)}\n`;
 
 					commandDetails += `╰─────────────────────◊\n`;
-					commandDetails += `     💫 ST_BOT Command Info`;
+					commandDetails += `     💫 Shinobu Bot Command Info`;
 
 					await sendMessage(commandDetails, event.threadID);
 				} else {
@@ -126,7 +126,7 @@ module.exports = {
 				helpMessage += '│ 💡 Type !help <cmdname>\n';
 				helpMessage += '│    for direct command info\n';
 				helpMessage += '╰─────────────────────◊\n';
-				helpMessage += '        💫 ST_BOT Help Menu';
+				helpMessage += '        💫 Shinobu_BOT Help Menu';
 
 				const sentMessage = await sendMessage(helpMessage, event.threadID);
 				
@@ -226,7 +226,7 @@ module.exports = {
 					helpMessage += '│ 💡 Type !help <cmdname>\n';
 					helpMessage += '│    for direct command info\n';
 					helpMessage += '╰─────────────────────◊\n';
-					helpMessage += '        💫 ST_BOT Help Menu';
+					helpMessage += '        🦋 Shinobu_BOT Help Menu';
 
 					// Delete old onReply data and unsend previous message
 					global.GoatBot.onReply.delete(Reply.messageID);
@@ -336,7 +336,7 @@ module.exports = {
 					commandDetails += `│ 📚 Usage Guide:\n│ ${guideText.replace(/{pn}/g, `!${fullCommand.config.name}`)}\n`;
 
 					commandDetails += `╰─────────────────────◊\n`;
-					commandDetails += `     💫 ST_BOT Command Info`;
+					commandDetails += `     🦋 Shinubo_BOT Command Info`;
 
 					// Send command details (final stage - no new onReply needed)
 					await api.sendMessage(commandDetails, event.threadID);
